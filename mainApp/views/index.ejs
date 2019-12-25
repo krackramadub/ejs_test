@@ -1,2 +1,25 @@
 <% include ./html_constructor %>
 <% include ./navigation %>
+<div class="container">
+  <div class="head_text">Trending today</div>
+  <div class="thrend">
+    <% for(var i=0; i<posts.length; i++) {%>
+        <div class="col-xs-6 col-md-3 trend_container">
+          <a href="#" class="trend_block">
+            <div style="background: rgb(255, 255, 255) url('<%= posts[i].img %>') no-repeat scroll center center / cover;">
+              <div class="text_on_trend_block">
+                <h2 class="trend_h2"> <%= posts[i].title%> </h2>
+                <div class="split_text_on_trend">
+                  <%= posts[i].small %>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+    <% } %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="head-text">Theme</div>
+</div>
