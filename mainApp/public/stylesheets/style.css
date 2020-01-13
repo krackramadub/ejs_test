@@ -3,6 +3,11 @@ body {
   /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
   background-color: #DAE0E6;
 }
+@media screen and (max-width: 800px){
+  .trend_container {
+    margin-bottom:10px;   
+  }
+  }
 .navbar {
   border-radius: 0px !important;
 }
@@ -26,6 +31,7 @@ a {
 }
 .trend_container * {
     border-radius: 5px;
+    /* margin: 5px !important; */
 }
 .container-fluid{
   max-width: 1020px;
@@ -63,5 +69,56 @@ a {
   max-height: 40px;
   display: -webkit-inline-box;
   -webkit-line-clamp: 2;
-
+}
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #d3d3d3;
+  border-left-width: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.bs-callout:hover{
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #000;
+  border-left-width: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.col-md-8 {
+  padding: 0px 15px 0px 0px;
+}
+a {
+  text-decoration: none !important;
+  color: #333;;
+}
+.content-post {
+  max-height: 250px;
+  -webkit-mask-image: linear-gradient(180deg,#000 60%,transparent);
+  mask-image: linear-gradient(180deg,#000 60%,transparent);
+  overflow: hidden;
+  
+}
+.author-name>a{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--newCommunityTheme-bodyText);
+  display: inline;
+  line-height: 20px;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+.post-avatar-img {
+  width: 35px;
+  display: inline;
+}
+.post-avatar-img > img{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.author-name {
+  display: inline-block;
 }
